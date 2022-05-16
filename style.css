@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Poppins',sans-serif;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+h2{
+   font-family: 'Times New Roman', Times, serif; 
+   font-size: 20px;
+   font-weight: 200;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 10px;
+    font-weight: 100;
+}
+
+p{
+    color: gray;
+    font-weight: 100;
+}
+
+body{
+    background-color: #efefef;
+}
+
+#header{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    box-shadow: 0px 7px 13px grey;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+}
+
+#header .image{
+    width:70px;
+    padding: 5px 30px;
+    background-color: #eaea0c;
+    border-radius: 100%;
+}
+
+
+#header .search{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: #efefef;
+    border-radius: 50px;
+    transition: border 0.15s;
+}
+
+#header .search:hover{
+    border: 1.5px solid blue;
+}
+
+#header .search img{
+    width: 25px;
+    padding: 0px 20px;
+}
+
+#header .search input{
+    background-color: #efefef;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 50;
+    margin-left: 0%;
+    margin-right: 7px;
+}
+
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0px 30px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    transition: color 0.15s;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: red;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: radial-gradient(rgb(255, 0, 0),rgb(249, 205, 205));
+    position :absolute;
+    bottom:-4px;
+    left: 30px;
+}
+
+#add{
+    margin-top: 15px;
+    display: flex;
+    background: cover;
+    width: 100%;
+    background-image:radial-gradient(rgb(101, 98, 98),black);
+    cursor: pointer;
+}
+
+#add img{
+    width:20%;
+    padding-left: 250px;
+    padding-bottom: 30px;
+}
+
+.add_feature{
+    padding-top: 70px;
+    padding-left: 250px;
+}
+
+.add_feature h1{
+    color: white;
+}
+
+.add_feature h2{
+    color: white;
+}
+
+.add_feature p{
+    color: white;
+}
+
+.add_feature img{
+    width:500px;
+}
+
+#features{
+    display: flex;
+    padding: 50px 70px;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.fea_1{
+    width: 160px;
+    text-align: center;
+    padding: 25px 25px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 20px 20px 34px rgb(255, 255, 255);
+    margin-top: 15px;
+    transition: box-shadow 0.15s, border-radius 0.02s;
+    cursor: pointer;
+}
+
+.fea_1:hover{
+    box-shadow: 20px 20px 54px rgb(227, 225, 225);
+    border-radius: 20px;
+}
+
+.fea_1 img{
+    height: 170px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.fea_1 h2{
+    line-height: 1;
+    display: inline-block;
+    padding: 8px 8px 6px 8px;
+    background-color: rgb(112, 112, 253);
+    border-radius: 5px;
+}
+
+#features .fea_1:nth-child(2) h2{
+    background-color: rgb(245, 181, 87);
+}
+
+#features .fea_1:nth-child(3) h2{
+    background-color: rgb(85, 239, 157);
+}
+
+#features .fea_1:nth-child(4) h2{
+    background-color: rgb(75, 238, 244);
+}
+
+#features .fea_1:nth-child(5) h2{
+    background-color: rgb(248, 121, 121);
+}
+
+#features .fea_1:nth-child(6) h2{
+    background-color: rgb(237, 237, 112);
+}
+
+#container{
+    text-align: center;
+}
+
+#container h1{
+    font-weight: 700;
+}
+
+#container p{
+    padding: 5px 0px;
+}
+
+#container .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#container .pro{
+    width:15%;
+    min-width: 230px;
+    padding :10px 12px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 20px 20px 34px rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+
+#container .pro:hover{
+    box-shadow: 20px 20px 54px rgb(208, 205, 205);
+}
+
+#container .pro:hover .des h2{
+    color: rgb(0, 0, 226);
+}
+
+#container .pro img{
+    width: 200px;
+}
+
+#container .pro .cart{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: black;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    border: 1px solid rgb(82, 117, 12);
+    position: absolute;
+    top: 170px;
+    right: 10px;
+}
+
+#container .pro .cart:hover{
+    background-color: red;
+}
+
+
+#container .des{
+    text-align: start;
+    padding: 10px 0px;
+}
+
+#container .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#container .des .star{
+    width: 60px;
+    height: 20px;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+    background-color: #388E3C;
+    border-radius: 7px;
+    padding: 3px 5px;
+    align-items: center;
+}
+
+#container .price h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#container .price p{
+    text-decoration: line-through;
+}
+
+#container .price span{
+    color: green;
+    font-weight: 700;
+}
+
+#mail {
+    margin-top: 30px;
+    background-color: #061E41;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mail .msg{
+    padding: 0px 70px;
+}
+
+#mail .msg h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+#mail .msg p{
+    padding: 5px 0px;
+    color: #efefef;
+}
+
+#mail .msg p span{
+    color: #eaea0c;
+    cursor:alias;
+}
+
+#mail .get_mail{
+    height: 50px;
+    display: flex;
+    padding-right: 150px;
+}
+
+#mail .get_mail input{
+    width: 300px;
+    font-size: 18px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    padding: 0 1.25em;
+    border: 1px solid transparent;
+}
+
+#mail .get_mail button{
+    width: 80px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #388E3C;
+    font-size: 15px;
+    font-weight: 700;
+    color: #efefef;
+    cursor: pointer;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    
+}
+
+footer{
+    background-color:#ffffff;
+    padding:20px 40px;
+}
+
+footer .contact img{
+    width:70px;
+    padding: 5px 30px;
+    background-color: #eaea0c;
+    border-radius: 100%;
+}
+
+footer .contact h4{
+    padding: 20px 0px;
+}
+
+footer .contact i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+footer .about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .about h4{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+footer .about a{
+    text-decoration: none;
+    color: grey;
+    padding: 2px 0px;
+}
+
+
+footer .acc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .acc h4{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+footer .acc a{
+    text-decoration: none;
+    color: grey;
+    padding: 2px 0px;
+}
+
+footer .app h4{
+    padding-top: 40px;
+    padding-bottom:5px ;
+}
+
+footer .app img{
+    padding: 30px 20px;
+    width: 150px;
+    cursor: pointer;
+}
