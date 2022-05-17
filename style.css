@@ -149,10 +149,6 @@ body{
     color: white;
 }
 
-.add_feature img{
-    width:500px;
-}
-
 #features{
     display: flex;
     padding: 50px 70px;
@@ -441,3 +437,103 @@ footer .app img{
     width: 150px;
     cursor: pointer;
 }
+
+@media (max-width: 800px){
+    #add{
+    margin-top: 15px;
+    display: flex;
+    background: cover;
+    width: 100%;
+    background-image:radial-gradient(rgb(101, 98, 98),black);
+    cursor: pointer;
+}
+
+#add img{
+    width:35%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.add_feature{
+    padding-top: 20px;
+    padding-left: 70px;
+}
+
+.add_feature h1{
+    color: white;
+}
+
+.add_feature h2{
+    color: white;
+}
+
+.add_feature p{
+    color: white;
+}
+
+#mail {
+    margin-top: 30px;
+    background-color: #061E41;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mail .msg{
+    padding: 0px 30px;
+}
+
+#mail .msg h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+#mail .msg p{
+    padding: 5px 0px;
+    color: #efefef;
+}
+
+#mail .msg p span{
+    color: #eaea0c;
+    cursor:alias;
+}
+
+#mail .get_mail{
+    height: 50px;
+    display: flex;
+    padding-right: 0px;
+}
+
+#mail .get_mail input{
+    width: 70px;
+    font-size: 18px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    padding: 0 1.25em;
+    border: 1px solid transparent;
+}
+
+#mail .get_mail button{
+    width: 80px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #388E3C;
+    font-size: 15px;
+    font-weight: 700;
+    color: #efefef;
+    cursor: pointer;
+}
+}
+
+@media (max-width: 1050px){
+    footer{
+        display:flex; 
+        flex-wrap: wrap;
+    }
+}
+
+
