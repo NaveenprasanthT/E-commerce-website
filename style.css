@@ -87,7 +87,7 @@ body{
     display: flex;
 }
 
-#navbar li{
+li{
     list-style: none;
     padding: 0px 30px;
     position: relative;
@@ -115,6 +115,16 @@ body{
     position :absolute;
     bottom:-4px;
     left: 30px;
+}
+
+#mobile{
+    display:none;
+}
+
+#mobile i{
+    margin-right: 15px;
+    font-size: 30px;
+    color: rgb(42, 8, 8);
 }
 
 #add{
@@ -459,18 +469,6 @@ footer .app img{
     padding-left: 70px;
 }
 
-.add_feature h1{
-    color: white;
-}
-
-.add_feature h2{
-    color: white;
-}
-
-.add_feature p{
-    color: white;
-}
-
 #mail {
     margin-top: 30px;
     background-color: #061E41;
@@ -484,49 +482,51 @@ footer .app img{
     padding: 0px 30px;
 }
 
-#mail .msg h2{
-    font-size: 25px;
-    font-weight: 700;
-    color: white;
-}
-
-#mail .msg p{
-    padding: 5px 0px;
-    color: #efefef;
-}
-
-#mail .msg p span{
-    color: #eaea0c;
-    cursor:alias;
-}
-
-#mail .get_mail{
-    height: 50px;
-    display: flex;
-    padding-right: 0px;
-}
 
 #mail .get_mail input{
     width: 70px;
-    font-size: 18px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    outline: none;
-    padding: 0 1.25em;
-    border: 1px solid transparent;
 }
 
-#mail .get_mail button{
-    width: 80px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border: 1px solid transparent;
-    background-color: #388E3C;
-    font-size: 15px;
-    font-weight: 700;
-    color: #efefef;
-    cursor: pointer;
 }
+
+
+@media (max-width: 1000px){
+    #navbar{
+        margin: 77px 0px 10px 0;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -260px;
+        height: 100vh;
+        width:185px;
+        background-color: #d7d7d7;
+        margin-bottom: 50px;
+        transition: 0.5s ease;
+        }
+
+        #navbar.active{
+            right: 0px;
+        }
+
+        #navbar ul{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #navbar ul li{
+            padding: 20px 40px;
+        }
+
+        #mobile{
+            display:flex;
+            cursor: pointer;
+        }
+        
 }
 
 @media (max-width: 1050px){
@@ -534,6 +534,23 @@ footer .app img{
         display:flex; 
         flex-wrap: wrap;
     }
+
+    footer .acc{
+        margin-left: 30px;
+    }
+    
+    footer .about{
+        margin-left: 30px;
+    }
+
 }
 
 
+#close{
+    position: absolute;
+    top: 2%;
+    left: 20px;
+    font-size: 30px;
+    color: rgb(150, 0, 0);
+    cursor: pointer;
+}
