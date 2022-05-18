@@ -121,6 +121,11 @@ li{
     display:none;
 }
 
+#close{
+    display:none;
+}
+
+
 #mobile i{
     margin-right: 15px;
     font-size: 30px;
@@ -527,6 +532,16 @@ footer .app img{
             cursor: pointer;
         }
         
+        #close{
+            display: flex;
+            position: absolute;
+            top: 2%;
+            left: 20px;
+            font-size: 30px;
+            color: rgb(150, 0, 0);
+            cursor: pointer;
+        }
+
 }
 
 @media (max-width: 1050px){
@@ -546,11 +561,3 @@ footer .app img{
 }
 
 
-#close{
-    position: absolute;
-    top: 2%;
-    left: 20px;
-    font-size: 30px;
-    color: rgb(150, 0, 0);
-    cursor: pointer;
-}
